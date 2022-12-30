@@ -1,15 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int n,sum=0,mul=1,rem;
+    int n,r,sum=0,product=1,sub;
     scanf("%d",&n);
-    while(n>0)
+    while(n!=0)
     {
-        rem=n%10;
-        sum=sum+rem;
-        mul=mul*rem;
+        r=n%10;
         n=n/10;
+        sum=sum+r;
+        product=product*r;
     }
-    int sub=mul-sum;
+    sub=product-sum;
     printf("%d",sub);
 }
